@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Local Storage Demo</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script defer src="assets/js/script.js"></script>
+    </head>
+    <body>
+        <div class="container-reg">
+            <form action="" id="form">
+                <h1>Register Employee</h1>
+                <div class="input-control">
+                    <label for="username">Username<span id="imp">*</span></label>
+                    <input type="text" id="username" name="username">
+                    <div class="error"></div>
+                </div>
+
+                <div class="input-control">
+                    <label for="email">Email<span id="imp">*</span></label>
+                    <input type="text" id="email" name="email">
+                    <div class="error"></div>
+                </div>
+
+                <div class="input-control">
+                    <label for="password">Password<span id="imp">*</span></label>
+                    <input type="password" id="password" name="password">
+                    <div class="error"></div>
+                </div>
+
+                <div class="input-control">
+                    <label for="password2">Password again<span id="imp">*</span></label>
+                    <input type="password" id="password2" name="password2">
+                    <div class="error"></div>
+                </div>
+
+                <div class="input-control">
+                    <label for="github">Github link</label>
+                    <input type="text" id="github" name="github">
+                    <div class="error"></div>
+                </div>
+
+                <div class="input-control">
+                    <label for="facebook">Facebook link</label>
+                    <input type="text" id="facebook" name="facebook">
+                    <div class="error"></div>
+                </div>
+
+                <div class="input-control">
+                    <label for="twitter">Twitter link</label>
+                    <input type="text" id="twitter" name="twitter">
+                    <div class="error"></div>
+                </div>
+
+                <div class="input-control">
+                    <label for="myFileInput">Choose photo</label>
+                    <input type="file" name="myFileInput" id="myFileInput">
+                </div>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+
+        <!-- carousel  -->
+        <section>
+            <div class="swiper mySwiper container">
+                <div class="swiper-wrapper content" id="swiper-wrapper">
+                    <!-- <div class="rating">
+                             <i class="fas fa-star"></i>
+                             <i class="fas fa-star"></i>
+                             <i class="fas fa-star"></i>
+                             <i class="far fa-star"></i>
+                             <i class="far fa-star"></i>
+                         </div> -->
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </section>
+    
+         <!-- Swiper JS -->
+         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+         <!-- Initialize Swiper -->
+         <script>
+           var swiper = new Swiper(".mySwiper", {
+             slidesPerView: 3,
+             spaceBetween: 30,
+             slidesPerGroup: 3,
+             loop: true,
+             loopFillGroupWithBlank: true,
+             pagination: {
+               el: ".swiper-pagination",
+               clickable: true,
+             },
+             navigation: {
+               nextEl: ".swiper-button-next",
+               prevEl: ".swiper-button-prev",
+             },
+           });
+         </script>
+    </body>
+</html>
